@@ -7,10 +7,12 @@
 }
 
     .slider .item img {
+        -o-object-fit: contain;
         object-fit: contain;
         width: 100%;
         height: 50vmin;
         border: none;
+        -webkit-box-shadow: none;
         box-shadow: none;
     }
 
@@ -23,6 +25,8 @@
         color: #A6325F;
         font-weight: bold;
         font-size: 18px;
+        -webkit-transition: 0.6s ease;
+        -o-transition: 0.6s ease;
         transition: 0.6s ease;
         border-radius: 0 3px 3px 0;
     }
@@ -53,6 +57,8 @@
     background-color: #FFC7DD;
     border-radius: 50%;
     display: inline-block;
+    -webkit-transition: background-color 0.6s ease;
+    -o-transition: background-color 0.6s ease;
     transition: background-color 0.6s ease;
 }
 
@@ -61,8 +67,20 @@
     }
 
 .slider .item {
+    -webkit-animation-name: fade;
     animation-name: fade;
+    -webkit-animation-duration: 1.5s;
     animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
 }
 
 @keyframes fade {

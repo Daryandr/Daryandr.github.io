@@ -224,6 +224,7 @@ footer p{
 .order {
     font-family: 'Montserrat', sans-serif;
     font-size: 2.2vmin;
+    margin: 0.8vmin;
 }
 .order li::marker {
   color: #A6325F;

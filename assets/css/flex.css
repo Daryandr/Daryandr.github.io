@@ -1,0 +1,86 @@
+.animation_block {
+    width: 300px;
+    display: flex;
+    border: none;
+    background: transparent;
+    margin: auto;
+    margin-top: 60px;
+}
+.frog {
+    margin: auto;
+    margin-bottom:0;
+    margin-left: -50%;
+    opacity: 0;
+    transition: opacity 0s linear;
+}
+.princess {
+    opacity: 0;
+    transition: opacity 0s linear;
+    margin-bottom: 0;
+}
+.animation_block:hover .frog {
+    opacity: 1;
+    animation: frog_move 3s;
+    transition: opacity .1s linear;
+}
+@keyframes frog_move{
+    0% {
+        margin-left: 60%;
+    }
+    100% {
+        margin-left: -50%;
+    }
+}
+@keyframes growth{
+    0% {
+        transform: translate(-15px,73px) scale(0.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes final{
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.animation_block:hover .text1 {
+    opacity: 1;
+    transition-delay: 1.5s;
+}
+.text1 {
+    margin-left:30%;
+    color: green;
+    font-size: 20px;
+    opacity: 0;
+    transition: opacity .1s linear;
+    transition-delay: 0s;
+}
+.text2 {
+    color: green;
+    font-size: 20px;
+    opacity: 0;
+    transition: opacity .1s linear;
+    transition-delay: 0s;
+}
+.animation_block:active {
+    animation: final 3s;
+    animation-delay:3.5s;
+}
+.animation_block:active .frog{
+    opacity:0;
+}
+.animation_block:active .princess{
+    opacity:1;
+    animation:growth 3s;
+    transition: opacity .1s linear;
+}
+.animation_block:active .text1{
+    opacity:0;
+    transition-delay:0.3s;
+}
+.animation_block:active .text2{
+    opacity:1;
+    transition-delay: 3s;
+}

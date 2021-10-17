@@ -1,0 +1,231 @@
+html {
+    height: 100%;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: white;
+    margin: 0 auto;
+    line-height: 1.6;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+main {
+    flex: 1 0 auto;
+}
+.name {
+    font-size: 6.2vmin;
+    text-align: center;
+    margin: 0 auto;
+    padding-top:2vmin;
+    font-weight: 400;
+    font-family: 'Spectral SC', serif;
+    position: relative;
+}
+.name:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #A6325F;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+}
+.intro {
+    display: flex;
+    margin-top: 2vmin;
+    box-sizing: border-box;
+}
+.intro_pic {
+    box-sizing: inherit;
+    width: 100%;
+    height: 70vmin;
+    object-fit: cover;
+    background: url(../img/maincake.jpg) center no-repeat;
+    background-size:85% auto;
+}
+.intro_title {
+    box-sizing: inherit;
+    font-size: 4.8vmin;
+    text-align: center;
+    font-weight: 300;
+    font-family: 'Spectral SC', serif;
+    line-height: 1;
+}
+.intro_title:after{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.8vmin;
+    content:"+7(904)101-84-09";
+}
+img {
+    display: block;
+    margin: 0 auto;
+    object-fit:contain;
+}
+.logo {
+    position:relative;
+    box-sizing: inherit;
+    margin: auto;
+    width: 22vmin;
+    height: 22vmin;
+    display:block;
+}
+.intro .logo {
+    margin-top: 22%;
+}
+footer .l_text {
+    background: #FFC7DD;
+}
+.l_circle {
+    width: 20vmin;
+    height: 20vmin;
+    background: #A6325F;
+    border-radius: 50%;
+    position: absolute;
+    left: 1vmin;
+    top: 1vmin;
+}
+.l_text {
+    text-align: center;
+    font-size: 2.4vmin;
+    font-family: 'Montserrat', sans-serif;
+    color: #A6325F;
+    font-weight: 500;
+    width: 22vmin;
+    height: 4.5vmin;
+    background: white;
+    position: absolute;
+    top: 13vmin;
+}
+.l_cake {
+    width: 10vmin;
+    height: 6vmin;
+    background: #FF99C0;
+    position: absolute;
+    top: 10vmin;
+    left: 6vmin;
+    transform: rotate(-7deg);
+}
+.l_cake2 {
+    width: 0;
+    height: 0;
+    border-left: 7vmin solid transparent;
+    border-right: 3vmin solid transparent;
+    border-bottom: 3vmin solid #FFC7DD;
+    position: absolute;
+    top: -3vmin;
+}
+.l_cake3 {
+    width: 10vmin;
+    height: 1.2vmin;
+    background: white;
+    position: absolute;
+    top: 1vmin;
+}
+.l_cake4 {
+    width: 0.4vmin;
+    height: 3.2vmin;
+    background: white;
+    position: absolute;
+    top: -4.5vmin;
+    left: 6vmin;
+    transform: rotate(7deg);
+}
+.l_cake42 {
+    width: 1.1vmin;
+    height: 1.1vmin;
+    border-radius: 0 50% 50% 50%;
+    transform: rotate(45deg);
+    background: #F3FF99;
+    position: absolute;
+    top: -0.5vmin;
+    left: -0.3vmin;
+}
+.container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 152vmin;
+    box-sizing: border-box;
+}
+.header{
+    width:100%;
+    position:absolute;
+    top:0;
+    right:0;
+    left:0;
+    z-index:1000;
+}
+ nav {
+    text-align:center;
+    font-size: 2.2vmin;
+    text-transform:uppercase;
+}
+ nav a {
+    display: inline-block;
+    vertical-align: top;
+    margin: 2vmin;
+    margin-bottom: 0;
+    color: black;
+    text-decoration: none;
+    position: relative;
+}
+nav a:after{
+    content:"";
+    display:block;
+    width: 100%;
+    height: 2px;
+    opacity:0;
+    background-color:#A6325F;
+    position:absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    transition: opacity .1s linear;
+}
+ nav a:hover:after{
+    opacity:1;
+}
+footer {
+    text-align: center;
+    width: 152vmin;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 6vmin;
+    background: #FFC7DD;
+    flex-shrink: 0;
+    max-width: 152vmin;
+    width: 100%;
+}
+footer .catalog{
+    justify-content:center;
+}
+footer p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.3vmin;
+    margin:0.7vmin;
+}
+.col {
+    width: 50%;
+}
+.catalog {
+    margin-top: 4vmin;
+    display: flex;
+    height: 100%;
+    box-sizing: border-box;
+}
+.photos_title {
+    font-size: 3.3vmin;
+    text-align: center;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+}
+.order {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.2vmin;
+}
+.order li::marker {
+  color: #A6325F;
+  font-size: 3vmin;
+}

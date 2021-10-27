@@ -144,7 +144,6 @@ footer .l_text {
 .l_cake2 {
     width: 0;
     height: 0;
-    -webkit-appearance: none;
     border-left: 7vmin solid transparent;
     border-right: 3vmin solid transparent;
     border-bottom: 3vmin solid #FFC7DD;

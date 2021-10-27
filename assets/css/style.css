@@ -245,7 +245,7 @@ footer {
     margin-top: 6vmin;
     background: #FFC7DD;
     flex-shrink: 0;
-    -ms-flex-negative: 0;
+    -ms-flex: 0 0;
     max-width: 152vmin;
     width: 100%;
 }

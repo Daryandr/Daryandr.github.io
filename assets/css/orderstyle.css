@@ -1,0 +1,218 @@
+.makeorder{
+    text-align: center;
+}
+
+.q1{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.orderrad {
+    display: inline-block;
+    margin-right: 10px;
+}
+.orderrad input[type="radio"] {
+    display: none;
+}
+.orderrad label {
+    display: block;
+    cursor: pointer;
+    width: 22vmin;
+    text-align: center;
+    line-height: 6vmin;
+    font-size: 2.4vmin;
+    border: 0.2vmin solid #A6325F;
+    border-radius: 15px/15px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.orderrad input[type="radio"]:checked + label {
+    background: #FFC7DD;
+}
+
+.orderrad label:hover {
+    color: #A6325F;
+}
+
+.q2 input[type="radio"]:checked + label {
+    background: transparent;
+    border: 0.8vmin solid #A6325F;
+}
+
+.datetime{
+    height: 4vmin;
+    font-size: 2.4vmin;
+}
+
+#pickup{
+    font-size: 2.4vmin;
+}
+
+#address{
+    font-size: 2.4vmin;
+    display: none;
+}
+
+#add{
+    font-size: 2.4vmin;
+    height: 4vmin;
+    width: 50vmin;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.sel{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.4vmin;
+    height: 4vmin;
+    border-color: #A6325F;
+}
+
+.weightrange {
+    -webkit-appearance: none;
+    width: 50%;
+    height: 2vmin;
+    border-radius: 5px;
+    background: #FFC7DD;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    -webkit-transition: opacity .2s;
+    -o-transition: opacity .2s;
+    transition: opacity .2s;
+}
+
+.weightrange::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 3.5vmin;
+    height: 3.5vmin;
+    border-radius: 50%;
+    background: #A6325F;
+    cursor: pointer;
+}
+
+.weightrange::-moz-range-thumb {
+    width: 3.5vmin;
+    height: 3.5vmin;
+    border-radius: 50%;
+    background: #A6325F;
+    cursor: pointer;
+}
+
+.numw{
+    font-size: 3vmin;
+    font-weight: bold;
+    color: #A6325F;
+    margin-bottom: -2vmin;
+}
+
+.decor{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 63%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    font-size: 2.4vmin;
+    margin-bottom: 4vmin;
+}
+
+input[type="checkbox"]:checked,
+input[type="checkbox"]:not(:checked)
+{
+    position: absolute;
+    display: none;
+}
+
+input[type="checkbox"]:checked + label,
+input[type="checkbox"]:not(:checked) + label {
+    display: inline-block;
+    position: relative;
+    padding-left: 4vmin;
+    line-height: 2.8vmin;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked + label:before,
+input[type="checkbox"]:not(:checked) + label:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2.4vmin;
+    height: 2.4vmin;
+    border: 0.2vmin solid #A6325F;
+    background-color: #ffffff;
+}
+
+input[type="checkbox"]:checked + label:before,
+input[type="checkbox"]:not(:checked) + label:before {
+    border-radius: 2px;
+}
+input[type="checkbox"]:checked + label:after,
+input[type="checkbox"]:not(:checked) + label:after {
+    content: "";
+    position: absolute;
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+input[type="checkbox"]:checked + label:after,
+input[type="checkbox"]:not(:checked) + label:after {
+    left: 3px;
+    top: 4px;
+    width: 10px;
+    height: 5px;
+    border-radius: 1px;
+    border-left: 4px solid #A6325F;
+    border-bottom: 4px solid #A6325F;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+input[type="checkbox"]:not(:checked) + label:after {
+    opacity: 0;
+}
+
+input[type="checkbox"]:checked + label:after{
+    opacity: 1;
+}
+
+.dtext{
+    text-align: center;
+    font-size: 2.4vmin;
+}
+.dtext input{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.4vmin;
+    height: 3vmin;
+    width: 24vmin;
+    border-color: #A6325F;
+}
+#lgin,#lber{
+    display: none;
+}
+
+#quant{
+    height: 3vmin;
+    width: 20vmin;
+    font-size: 2.6vmin;
+    font-family: 'Montserrat', sans-serif;
+    border-color: #A6325F;
+}
+
+#descr{
+    font-size: 2.4vmin;
+    font-family: 'Montserrat', sans-serif;
+    width:65%;
+    height: 30vmin;
+}

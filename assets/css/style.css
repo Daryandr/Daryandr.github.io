@@ -1,0 +1,441 @@
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: white;
+    margin: 0 auto;
+    line-height: 1.6;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+main {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+}
+
+.name {
+    font-size: 6.2vmin;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 2vmin;
+    font-weight: 400;
+    font-family: 'Spectral SC', serif;
+    position: relative;
+}
+
+.name:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #A6325F;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+}
+
+.intro {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 2vmin;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.intro_pic {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+    width: 100%;
+    height: 70vmin;
+    -o-object-fit: cover;
+    object-fit: cover;
+    background: url(../img/maincake.jpg) center no-repeat;
+    background-size: 85% auto;
+}
+
+.intro_title {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+    font-size: 4.8vmin;
+    text-align: center;
+    font-weight: 300;
+    font-family: 'Spectral SC', serif;
+    line-height: 1;
+}
+
+.intro_title:after {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.8vmin;
+    content: "+7(904)101-84-09";
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    -o-object-fit: contain;
+    object-fit: contain;
+}
+
+.logo {
+    position: relative;
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+    margin: auto;
+    width: 22vmin;
+    height: 22vmin;
+    display: block;
+}
+
+.intro .logo {
+    margin-top: 22%;
+}
+
+footer .l_text {
+    background: #FFC7DD;
+}
+
+.l_circle {
+    width: 20vmin;
+    height: 20vmin;
+    background: #A6325F;
+    border-radius: 50%;
+    position: absolute;
+    left: 1vmin;
+    top: 1vmin;
+}
+
+.l_text {
+    text-align: center;
+    font-size: 2.4vmin;
+    font-family: 'Montserrat', sans-serif;
+    color: #A6325F;
+    font-weight: 500;
+    width: 22vmin;
+    height: 4.5vmin;
+    background: white;
+    position: absolute;
+    top: 13vmin;
+}
+
+.l_cake {
+    width: 10vmin;
+    height: 6vmin;
+    background: #FF99C0;
+    position: absolute;
+    top: 10vmin;
+    left: 6vmin;
+    -webkit-transform: rotate(-7deg);
+    -ms-transform: rotate(-7deg);
+    transform: rotate(-7deg);
+}
+
+.l_cake2 {
+    width: 0;
+    height: 0;
+    border-left: 7vmin solid transparent;
+    border-right: 3vmin solid transparent;
+    border-bottom: 3vmin solid #FFC7DD;
+    position: absolute;
+    top: -3vmin;
+}
+
+.l_cake3 {
+    width: 10vmin;
+    height: 1.2vmin;
+    background: white;
+    position: absolute;
+    top: 1vmin;
+}
+
+.l_cake4 {
+    width: 0.4vmin;
+    height: 3.2vmin;
+    background: white;
+    position: absolute;
+    top: -4.5vmin;
+    left: 6vmin;
+    -webkit-transform: rotate(7deg);
+    -ms-transform: rotate(7deg);
+    transform: rotate(7deg);
+}
+
+.l_cake42 {
+    width: 1.1vmin;
+    height: 1.1vmin;
+    border-radius: 0 50% 50% 50%;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background: #F3FF99;
+    position: absolute;
+    top: -0.5vmin;
+    left: -0.3vmin;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 152vmin;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav {
+    text-align: center;
+    font-size: 2.2vmin;
+    text-transform: uppercase;
+}
+
+nav a {
+    display: inline-block;
+    vertical-align: top;
+    margin: 2vmin;
+    margin-bottom: 0;
+    color: black;
+    text-decoration: none;
+    position: relative;
+}
+
+nav button{
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    text-transform: uppercase;
+}
+
+nav a:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    opacity: 0;
+    background-color: #A6325F;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    -webkit-transition: opacity .1s linear;
+    -o-transition: opacity .1s linear;
+    transition: opacity .1s linear;
+}
+
+nav a:hover:after {
+    opacity: 1;
+}
+
+footer {
+    text-align: center;
+    width: 152vmin;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 6vmin;
+    background: #FFC7DD;
+    flex-shrink: 0;
+    max-width: 152vmin;
+    width: 100%;
+}
+
+footer .catalog {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+footer p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.3vmin;
+    margin: 0.7vmin;
+}
+
+.col {
+    width: 50%;
+}
+
+.catalog {
+    margin-top: 4vmin;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.photos_title {
+    font-size: 3.3vmin;
+    text-align: center;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.order {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.2vmin;
+    margin: 0.8vmin;
+}
+
+.order li::marker {
+    color: #A6325F;
+    font-size: 3vmin;
+}
+
+.hide {
+    background: rgba(0, 0, 0, .5);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 20;
+    display: none;
+}
+.window {
+    background: white;
+    width: 40%;
+    height: 50%;
+    position: fixed;
+    left: 30%;
+    top: 25%;
+    border: 2px solid #A6325F;
+    border-radius: 20px/20px;
+    z-index: 30;
+    display: none;
+}
+
+#window2{
+    top:15%;
+    height: 70%;
+}
+
+.authname{
+    font-size: 3.2vmin;
+    margin-top:2%;
+}
+
+.authreg{
+    font-size: 2.4vmin;
+    margin: 2%;
+}
+
+.regbut{
+    color: #A6325F;
+    border: none;
+    text-transform: uppercase;
+    font-size: 2.4vmin;
+    background-color: transparent;
+    cursor: pointer !important;
+}
+
+.authform{
+    position: center;
+    margin-top:4%;
+    font-size: 2.8vmin;
+}
+
+.authbut{
+    font-family: 'Montserrat', sans-serif;
+    color: #A6325F;
+    border: 2px solid #A6325F;
+    text-transform: uppercase;
+    font-size: 2.8vmin;
+    background-color: #FFC7DD;
+    border-radius: 15px/15px;
+    display: inline-block;
+    padding-left: 2vmin;
+    padding-right: 2vmin;
+    height: 6vmin;
+    cursor: pointer !important;
+}
+
+.authbut:hover{
+    background-color: #FF99C0;
+}
+
+.authform input[type="email"], .authform input[type="text"], .authform input[type="number"]{
+    height: 3.5vmin;
+    width: 40vmin;
+    font-size: 2.8vmin;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.authform input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.authform input[type="number"] {
+    -moz-appearance: textfield;
+}
+input[type="number"]:hover,
+input[type="number"]:focus {
+    -moz-appearance: number-input;
+}
+
+.authform input[type="password"]{
+    height: 3.5vmin;
+    width: 40vmin;
+    font-size: 2.8vmin;
+    font-family: Verdana;
+    letter-spacing: 0.125em;
+}
+
+.closebut{
+    color: #A6325F;
+    text-align: center;
+    border: 2px solid #A6325F;
+    padding: 0;
+    font-size: 3vmin;
+    background-color: #FFC7DD;
+    border-radius: 50px/50px;
+    width: 5vmin;
+    height: 5vmin;
+    position: absolute;
+    top:-3%;
+    left: 97%;
+    cursor: pointer !important;
+}
+
+.closebut:hover{
+    background-color: #FF99C0;
+}
+
+.adminform{
+    font-size: 2.4vmin;
+}
+.adminform input[type="email"], .adminform input[type="text"], .adminform input[type="number"], .adminform input[type="password"]{
+    height: 3vmin;
+    width: 35vmin;
+    font-size: 2.4vmin;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#area{
+    font-size: 2.4vmin;
+    font-family: 'Montserrat', sans-serif;
+    width:65%;
+    height: 25vmin;
+}

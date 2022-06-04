@@ -1,0 +1,48 @@
+.wins{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+h3{
+    font-weight: normal;
+    margin: 1vmin;
+    text-transform: uppercase;
+}
+
+.contacts{
+    margin: 2vmin;
+    margin-left: 0;
+    border: 0.3vmin solid #A6325F;
+    border-radius: 15px/15px;
+    font-size: 2.6vmin;
+    font-family: 'Montserrat', sans-serif;
+    padding: 2vmin;
+    margin-bottom: 3vmin;
+}
+
+.orders{
+    margin: 2vmin;
+    border: 0.3vmin solid #A6325F;
+    border-radius: 15px/15px;
+    font-size: 2.6vmin;
+    font-family: 'Montserrat', sans-serif;
+    padding: 2vmin;
+}
+
+.orders p{
+    margin: 1vmin;
+}
+
+.btn{
+    font-size: 2.8vmin;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    color: #A6325F;
+    background-color: transparent;
+    border: none;
+}
+
+.btn:hover{
+    font-weight: bold;
+}
